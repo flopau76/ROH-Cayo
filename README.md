@@ -71,5 +71,10 @@ python3 post_process.py -i 79wildChineseRhesus.rg -m genetic_map/chr{CHROM}.txt
 python3 post_process.py -i 98CayoRhesus.rg -m genetic_map/chr{CHROM}.txt
 ```
 
+## Analysis
+All code for the analysis and the plots is available in the jupyter notebook `analyse_roh.ipynb`. The file `environment.yaml` contains the required dependencies and allow to create a working environment with conda:
+
 ```bash
+conda env create -f environment.yaml
+conda activate ROH-Cayo
 ```
