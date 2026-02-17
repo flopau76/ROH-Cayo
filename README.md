@@ -63,13 +63,12 @@ TODO
 # Call on chinese genomes
 bcftools roh 79wildChineseRhesus_mmul10_final.vcf.gz --AF-tag AF -m genetic_map/chr{CHROM}.txt --output-type r --output 79wildChineseRhesus.rg
 # Call on Cayo Santiago genomes
-TODO
+bcftools roh 98CayoRhesus.vcf.gz --AF-tag AF -m genetic_map/chr{CHROM}.txt --output-type r --output 98CayoRhesus.rg
 ```
 ### Postprocessing the files
 ```bash
-```
-
-```bash
+python3 post_process.py -i 79wildChineseRhesus.rg -m genetic_map/chr{CHROM}.txt
+python3 post_process.py -i 98CayoRhesus.rg -m genetic_map/chr{CHROM}.txt
 ```
 
 ```bash
